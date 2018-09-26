@@ -1,0 +1,28 @@
+.container {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+    background: #cacee7
+}
+
+.content {
+    vertical-align: middle;
+    padding-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    
+}
+
+img {
+    padding-right: 2em;
+    float: left;
+    width: 250px;
+}
+
+body {
+    margin: 0;
+    font-size: 110%;
+    background: #8d90a3
+}
