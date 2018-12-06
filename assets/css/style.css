@@ -146,9 +146,10 @@ h3 {
 
 .img_container {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: inherit;
+    height: auto;
     overflow: hidden;
+    border: 2px solid #cccccc;
 }
 
 .img_container img {
@@ -169,11 +170,11 @@ h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-#portfolio_images {
+#class-projects {
     display: grid;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 32% 32% 32%;
 }
 
 #submit {
@@ -215,9 +216,10 @@ a:hover {
 /* Query for smaller desktop viewports (<=980px) */
 @media only screen and (max-width: 980px) {
     .main_container {
-        width: 60%;
+        width: auto;
         min-width: 700px;
         margin-left: 1em;
+        margin-right: 1em;
     }
 
     .heading nav {
@@ -235,11 +237,11 @@ a:hover {
         max-width: 980px;;
     }
 
-    #portfolio_images {
+    #class-projects {
         display: grid;
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 32% 32% 32%;
     }
 
     .img_container {
@@ -274,13 +276,6 @@ a:hover {
         margin-right: 2em;
     }
 
-    #portfolio_images {
-        display: grid;
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-        grid-template-columns: 49% 49%;
-    }
-
     .img_container {
         position: relative;
         width: inherit;
@@ -290,6 +285,13 @@ a:hover {
     
     .img_container img {
         transition: 0s;
+    }
+
+    #class-projects {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-template-columns: 49% 49%;
     }
 
 }
@@ -336,6 +338,10 @@ a:hover {
     }
 
     #portfolio_images {
+        display: block;
+    }
+
+    #class-projects {
         display: block;
     }
 
